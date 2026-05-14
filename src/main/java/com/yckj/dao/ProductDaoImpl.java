@@ -22,7 +22,8 @@ public class ProductDaoImpl implements ProductDao {
 
     /**
      * 添加商品
-      * @param product 商品对象
+     *
+     * @param product 商品对象
      * @return 添加成功，返回1，否则返回0
      */
     public int insertProduct(Product product) {
