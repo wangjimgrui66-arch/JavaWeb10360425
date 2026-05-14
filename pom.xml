@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>JavaWeb10360425</artifactId>
@@ -7,6 +8,14 @@
   <version>1.0-SNAPSHOT</version>
   <name>JavaWeb10360425 Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <!-- 这里是修复 Java 版本错误的关键 -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+  </properties>
+
   <dependencies>
     <!-- Source: https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
@@ -29,6 +38,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>JavaWeb10360425</finalName>
   </build>
